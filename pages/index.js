@@ -16,7 +16,7 @@ export default function Home({
   const [session] = useSession();
 
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Disney+</title>
         <link rel="icon" href="/favicon.ico" />
@@ -29,13 +29,15 @@ export default function Home({
         <main className="relative min-h-screen after:bg-home after:bg-center after:bg-cover after:bg-no-repeat after:bg-fixed after:absolute after:inset-0 after:z-[-1]">
           <Slider />
           <Brands />
-          <MoviesCollection results={popularMovies} title="Popular Movies"/>
-          <ShowsCollection results={popularShows} title="Popular Shows"/>
+          <MoviesCollection results={popularMovies} title="Popular Movies" />
+          <ShowsCollection results={popularShows} title="Popular Shows" />
 
-          <MoviesCollection results={top_ratedMovies} title="Top Rated Movies"/>
+          <MoviesCollection
+            results={top_ratedMovies}
+            title="Top Rated Movies"
+          />
 
-          <ShowsCollection results={top_ratedShows} title="Top Rated Shows"/>
-          
+          <ShowsCollection results={top_ratedShows} title="Top Rated Shows" />
         </main>
       )}
     </div>
@@ -51,7 +53,7 @@ export async function getServerSideProps(context) {
     top_ratedMoviesRes,
     top_ratedShowsRes,
   ] = await Promise.all([
-     fetch(
+    fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}&language=en-US&page=1`
     ),
     fetch(
@@ -79,7 +81,7 @@ export async function getServerSideProps(context) {
       popularMovies: popularMovies.results,
       popularShows: popularShows.results,
       top_ratedMovies: top_ratedMovies.results,
-      top_ratedMovies: top_ratedShows.results,
+      top_ratedShows: top_ratedShows.results,
     },
   };
 }
