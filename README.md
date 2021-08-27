@@ -1,29 +1,22 @@
-# Next.js + Tailwind CSS Example
+# Nextjs Disney+ Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+A Disnet+ Clone that you can sign in with your Google Account and send realtime posts.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+<img width="499" alt="Screen Shot 2021-08-27 at 13 08 09" src="https://user-images.githubusercontent.com/79858870/131112587-104455e9-5c0d-4473-b025-ef1f5f13a22b.png">
 
-## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Topics
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- Tailwind CSS
+- Nextjs SSR (Server Side Rendering)
+- TMDB API
+- Nextjs Authentication 
+- Vercel Hosting (How to deploy)
+- Firebase
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+### Demo Link
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+You can view the site here [Click here](https://disney-plus-clone-8yxy1rqd2-k-cicek.vercel.app/)
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+<img width="973" alt="Screen Shot 2021-08-27 at 13 10 21" src="https://user-images.githubusercontent.com/79858870/131113105-ae248a5a-668f-4327-9d1d-6dafe7a0d86c.png">
